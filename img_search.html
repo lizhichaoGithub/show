@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Search</title>
+		<style>
+			.top-container{
+				height:100px;
+				width:100%;
+				display:flex;
+				flex-direction:row-reverse;
+				align-items: center;
+			}
+			.top-item{
+				width: 100px;
+				height: 40px;
+			}
+			
+			.mid-container{
+				height:250px;
+				width:100%;
+				display:flex;
+				flex-direction: column;
+				align-items:center;
+			}
+			#baiduicon{
+				width:300px;
+				height:150px:
+			}
+			.search-container{
+				height:100px;
+				display:flex;
+				align-items:center;
+			}
+			.input_s{
+				height:50px;
+				width:500px;
+				border-radius: 10px;
+				border:3px solid rgb(78,110,242);
+			}
+			.btn_s{
+				background-color: rgb(78,110,242);
+				color: white;
+				height:50px;
+				width:150px;
+				border-radius: 10px;
+				font-size:24px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="top-container">
+			<div class="top-item">
+				<a href="index.html">百度搜索</a>
+			</div>
+			
+		</div>
+		
+		<div class="mid-container">
+			<div>
+				<image id="baiduicon" src="https://bkimg.cdn.bcebos.com/pic/c8ea15ce36d3d539ea45c4bd3a87e950352ab050?x-bce-process=image/resize,m_lfit,w_174,limit_1/format,f_auto">
+			</div>	
+			<div class="search-container">
+				<form action="https://image.baidu.com/search/index">
+					<input class="input_s" type="text" name="word">
+					<input name="tn" type="hidden" value="baiduimage">
+					<input class="btn_s" type="submit" value="百度搜图">
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

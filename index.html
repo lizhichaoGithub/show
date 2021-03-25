@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Search</title>
+		<style>
+			.top-container{
+				height:100px;
+				width:100%;
+				display:flex;
+				flex-direction:row;
+				justify-content:flex-end;
+				align-items: center;
+			}
+			.top-item{
+				text-align:center;
+				padding:10px 0;  
+								/*垂直居中用padding时，
+								不设置div高度  字少设置行
+								高时用line-height让文字高度和容器一致*/
+				width: 100px;
+			}
+			.top-item:hover{
+				background-color: rgb(78,110,242);
+			}
+			
+			.mid-container{
+				height:250px;
+				width:100%;
+				display:flex;
+				flex-direction: column;
+				align-items:center;
+			}
+			#baiduicon{
+				width:300px;
+				height:150px:
+			}
+			.search-container{
+				height:100px;
+				display:flex;
+				align-items:center;
+			}
+			.input_s{
+				height:50px;
+				width:500px;
+				border-radius: 10px;
+				border:3px solid rgb(78,110,242);
+			}
+			.btn_s{
+				background-color: rgb(78,110,242);
+				color: white;
+				height:50px;
+				width:150px;
+				border-radius: 10px;
+				font-size:24px;
+			}
+			
+			a{
+				text-decoration:none;   /* a标签取消下划线*/
+				color:black;
+			}
+			a:hover{								/* a标签hover  link visited active*/		
+				color:white;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="top-container">
+			<a href="adv_search.html">
+				<div class="top-item">高级搜索</div>
+			</a>
+			<a href="img_search.html">
+				<div class="top-item">图片搜索</div>
+			</a>
+		</div>
+		
+		<div class="mid-container">
+			<div>
+				<image id="baiduicon" src="https://www.baidu.com/img/flexible/logo/pc/result.png">
+			</div>	
+			<div class="search-container">
+				<form action="https://baidu.com/s">
+					<input class="input_s" type="text" name="wd">
+					<input class="btn_s" type="submit" value="百度一下">
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
